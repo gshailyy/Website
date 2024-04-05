@@ -1,0 +1,253 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+nav {
+    height: 70px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0px 60px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+      rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  }
+  .middle {
+    display: flex;
+    gap: 25px;
+    font-weight: 600;
+  }
+  .navRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .button {
+    background-color: #faa71c;
+    border-radius: 40px;
+    border: 0;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+    cursor: pointer;
+    padding: 10px 25px;
+  }
+  .right {
+    padding: 40px 0px;
+    display: grid;
+    grid-template-columns: 62% 36%;
+    gap: 15px;
+  }
+  .drive {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-color: #0c6aac;
+    padding: 10px 40px;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    border-radius: 12px;
+  }
+  .drive p {
+    margin: 0px 10px;
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 15px;
+  }
+  .drive span {
+    background-color: #faa71c;
+    color: black;
+    padding: 5px;
+    line-height: 50px;
+  }
+
+  .rightLeft {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+    gap: 30px;
+  }
+  .rightright {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px 30px;
+    border-radius: 25px;
+    border: 2px solid #faa71c;
+    background-color: #fff5e4;
+  }
+  
+  .rightright h3 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #170F49;
+    margin: 0px 0px;
+  }
+  .rightright p {
+    padding: 0px;
+    margin: 0px;
+  }
+  .rightright div {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+  }
+  .rightright hr {
+    width: 100%;
+    height: 2px;
+    border: 0;
+    background-color: #faa71c;
+  }
+  .circleAnimate {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 90px;
+    left: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate 3s linear infinite;
+  }
+  .circleAnimate img {
+    z-index: 1;
+  }
+  .arrwIcon {
+    position: absolute;
+    top: 135px;
+    left: 58px;
+    z-index: 2;
+  }
+  .arrow {
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+  }
+  @keyframes rotate {
+    /* Define the keyframes for rotation */
+    from {
+      transform: rotate(0deg); /* Start rotation at 0 degrees */
+    }
+    to {
+      transform: rotate(360deg); /* End rotation at 360 degrees */
+    }
+  }
+.header{
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 1%;
+    background-color: #FBFBFB;
+    background-image: url("images/Background\ Noise.png");
+}
+
+.left{
+    margin: 0px;
+    padding: 60px 0px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    
+}
+h2 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    animation: gradientAnimation 20s ease-in-out infinite;
+    background-image: linear-gradient(105deg, #75b469, #efce74, #fb833f, #fecc4f, #fb11e0, #fe732b, #0149ff, #01a3ff, #3e85fe, #883eec, #75b469);
+    background-size: 900%;
+
+    background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+h1 {
+    font-size: 60px;
+    margin: 0px;
+    padding: 0px;
+    /* width: 70%; */
+}
+
+p{
+    font-size: 20px;
+    color: #4d4d4d;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.reviews {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2%;
+}
+
+.review1 {
+    background-color: #EFEFEF;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.line {
+    transform: rotate(90);
+    height: 100%;
+}
+.rating {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.rating h3, .rating p {
+    margin: 0px;
+}
+.rating p {
+font-size: 12px;
+color: #656565;
+}
+
+.rating h3 {
+    font-size: 26px;
+    color: #515151;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 100% 100%;
+       
+    }
+    100% {
+      background-position: 300% 300%;
+  }
+}
+
+@media (max-width:1440px) {
+    .reviews {
+        grid-template-columns: 32% 32% 32%;
+        gap: 1%;
+    }
+    .drive p {
+        margin: 0px 0px;
+      }
+      .circleAnimate {
+        top: 50px;
+        left: -20px;
+      }
+      .arrwIcon {
+        top: 95px;
+        left: 27px;
+        z-index: 2;
+      }
+}
